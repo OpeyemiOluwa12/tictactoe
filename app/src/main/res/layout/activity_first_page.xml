@@ -4,14 +4,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.git.tictactoe.FirstPage"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="10dp">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tictactoe"/>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:text="SELECT PLAYERS"
         android:layout_gravity="center"
+        android:textSize="20sp"
+        android:textColor="#000000"
         />
     <RadioGroup
+        android:layout_weight="1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/player_Group">
@@ -20,38 +30,50 @@
         android:layout_height="wrap_content"
         android:text="With Computer"
         android:checked="true"
-        android:id="@+id/computer"/>
+        android:id="@+id/computer"
+        android:textSize="17sp"/>
     <RadioButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="2 Players"
-        android:id="@+id/twoPlayers"/>
+        android:id="@+id/twoPlayers"
+        android:textSize="17sp"/>
     </RadioGroup>
     <TextView
+        android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="SELECT BOARD"/>
+        android:text="SELECT BOARD"
+        android:textSize="20sp"
+        android:textColor="#000000"/>
     <RadioGroup
+        android:layout_weight="1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/board_Group">
+        android:id="@+id/board_Group"
+        >
     <RadioButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:checked="true"
         android:text="3 by 3"
-        android:id="@+id/three"/>
+        android:id="@+id/three"
+        android:textSize="17sp"/>
     <RadioButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="5 by 5"
-        android:id="@+id/five"/>
+        android:id="@+id/five"
+        android:textSize="17sp"/>
     </RadioGroup>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_weight="0"
         android:text="START GAME"
         android:layout_gravity="center"
-        android:onClick="nextPage"/>
+        android:onClick="nextPage"
+        android:textSize="17sp"
+        android:textColor="#000000"/>
 </LinearLayout>

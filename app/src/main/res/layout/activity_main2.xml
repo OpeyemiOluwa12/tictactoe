@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="ROUND 1"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="#000000"
         android:textSize="20sp" />
 
     <LinearLayout
@@ -378,7 +378,7 @@
             android:layout_height="wrap_content"
             android:onClick="gameReset"
             android:text="GAME RESET"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="#000000"
             android:textSize="20sp"
             android:layout_weight="1"
 
@@ -389,7 +389,7 @@
             android:layout_height="wrap_content"
             android:onClick="reset"
             android:text="Next ROUND"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="#000000"
             android:textSize="20sp"
             android:layout_weight="1"/>
 
